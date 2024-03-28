@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>formulario</title>
+</head>
+<body style="background: lightslategrey;">
+	<h1>Formulario</h1>
+	<form action="formulario1.php" method="POST" enctype="multipart/form-data">
+		<!-- form tiene dos method, el POST que es un envio interno de los datos, y el GET donde los datos son enviados desde la url, se usa mucho para API -->
+		<div>
+			<label for="name">Nombre</label>
+			<input id="name" name="name" placeholder="tu nombre">
+		</div>
+		<br>
+		<div>
+			<label for="phone">Telefono</label>
+			<input id="phone" name="phone" placeholder="04xx-1234567">
+		</div>
+		<br>
+		<div>
+			<label for="languaje">Lenguajes de programación</label>
+			<select id="languaje" name="languaje">
+
+				<option value="">SELECCIONE UNO</option>
+				<option value="Python">Python</option>
+				<option value="PHP">PHP</option>
+				<option value="Java">Java</option>
+				<option value="C#">C#</option>
+				<option value="Javascript">Javascript</option>
+			</select>
+		</div>
+		<br>
+		<div>
+			<label for="emocion">Como te sientes?</label>
+
+		</div>
+		<br>
+		<div id="emocion" name="emocion">
+			<input type="radio" name="check1" value="contento">
+			<label>Contento</label>
+			<input type="radio" name="check1" value="triste">
+			<label>triste</label>
+			<input type="radio" name="check1" value="normal" checked>
+			<label>normal</label>
+			<input type="radio" name="check1" value="aburrido">
+			<label>aburrido</label>
+			<input type="radio" name="check1" value="motivado">
+			<label>motivado</label>
+		</div>
+		<br>
+		<div>
+			<label for="fichero"> Enviar un archivo por favor</label>
+			<br>
+			<!-- <input type="file" id="fichero" name="fichero" accept=".png"> -->
+			<input type="file" id="fichero" name="fichero">
+		</div>
+		<br>
+		<button type="submit">Enviar</button>
+	</form>
+</body>
+</html>
